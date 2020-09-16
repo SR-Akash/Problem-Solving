@@ -3,13 +3,13 @@
 using namespace std;
 int main()
 {
-    ll x;
-    cin>>x;
-    while(x--)
+    ll n;
+    cin>>n;
+    ll sum=0;
+    for(int i=1;i<=n;i++)
     {
-        ll a,b,c;
-        cin>>a>>b>>c;
-        cout<<(a+b+c)/2<<endl;
+        sum+=i*(n-i);
     }
+    cout<<sum+n<<endl;
     return 0;
 }
